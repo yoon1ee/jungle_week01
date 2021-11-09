@@ -2,11 +2,11 @@ import sys
 
 n = int(sys.stdin.readline())
 
-if n < 110:
-    count = 99
+if n < 100:
+    count = n
 else:
     count = 99
-    for i in range(111, n+1):
+    for i in range(100, n+1):
         tmp = list(str(i))
         d = int(tmp[-1]) - int(tmp[-2])
         while len(tmp) > 1:
